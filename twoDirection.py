@@ -71,8 +71,6 @@ class MyRobot1(RCJSoccerRobot):
 
                     w = 0
                     v = kp_y * Error_y + ki_y * sum_Error_y + kd_y * Error_d_y
-                    R = 0.02
-                    L = 0.08
 
                     vr = (2 * v - L * w) / (2 * R)
                     vl = (2 * v + L * w) / (2 * R)
